@@ -22,7 +22,7 @@ const options = {
 const swaggerSpec = swaggerJSDoc(options);
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 const version = process.env.VERSION_API;
 
 app.use(express.json());
